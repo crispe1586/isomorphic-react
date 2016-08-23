@@ -3,6 +3,7 @@ var express = require('express');
 var engine = require('react-engine');
 var path = require('path');
 var port = process.env.PORT || 8080;
+//var routes = require('routes');
 var app=express();
 
 app.use(express.static(path.join(__dirname, 'public')));
@@ -16,8 +17,13 @@ app.set('view engine', 'jsx');
 // Set react-engine as the engine of express views
 app.set('view', engine.expressView);
 
+//app.use('/', routes);
+
 app.get('/',function(req,res){
 	res.render('index', { title : 'Pokédex-React' });
+});
+app.get('/fruit/:fruitname',function(req,res){
+	res.render('view', { title : 'Pokédex-React' });
 });
 
 app.listen(port, function() {

@@ -24130,6 +24130,7 @@ module.exports=[
 
 },{}],158:[function(require,module,exports){
 var React = require('react');
+
 var FruitContainer = require('./components/FruitContainer.react');
 
 React.render(
@@ -24148,7 +24149,7 @@ var Fruit = React.createClass({displayName: "Fruit",
 		return(
 			React.createElement("div", {className: "Fruit"}, 
 				React.createElement("figure", null, 
-					React.createElement("a", {href: '/#fruit/'+fruit.name}, 
+					React.createElement("a", {href: '/fruit/'+fruit.name}, 
               			React.createElement("img", {src: "http://img.pokemondb.net/sprites/black-white/anim/normal/"+fruit.name+".gif"})
               		)
          		), 
