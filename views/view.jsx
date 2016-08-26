@@ -6,7 +6,7 @@ var View = React.createClass({
       <html lang="es">
         <head>
           <meta charser="utf-8" />
-          <title>{this.props.title}</title>
+          <title>View</title>
           <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
           <link rel="stylesheet" href="styles/style.css" />
         </head>
@@ -16,7 +16,7 @@ var View = React.createClass({
               crispe
             </div>
           </header>
-          <section id="container">
+          <section id="container">cristina rpo
           </section>
           
           <script src="js/build.js"></script>

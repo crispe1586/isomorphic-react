@@ -21,7 +21,7 @@ var FruitContainer = React.createClass({
 		return(
 			<div className="FruitContainer">
  				<h1>No esperes más! Encuentra toda la info sobre tu pokémon favorito.</h1>
- 				<FruitSearch searchBy={this.searchBy.bind(this)} />
+ 				<FruitSearch searchBy={this.searchBy} />
  				<FruitList fruitList={this.state.fruitList} searchValue={this.state.searchValue} />
  			</div>
 		);

@@ -4,7 +4,7 @@
   "description": "Aplicación web que permite buscar información de tu Pokémon favorito",
   "main": "source/app.js",
   "scripts": {
-    "server":"babel-node server.js",
+    "server": "babel-node server.js",
     "watch": "watchify ./source/app.js -o ./public/js/build.js -v",
     "browserify": "browserify ./source/app.js | uglifyjs > ./public/js/build.js",
     "build": "npm run browserify ",
@@ -19,9 +19,13 @@
   "dependencies": {
     "express": "^4.13.0",
     "gulp": "^3.9.1",
+    "history": "^3.0.0",
     "node-babel": "^0.1.2",
-    "react": "^0.13.3",
-    "react-engine": "^1.7.0"    
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1",
+    "react-engine": "^4.1.0",
+    "react-router": "^2.0.0",
+    "uid": "0.0.2"
   },
   "devDependencies": {
     "babel-cli": "^6.11.4",
